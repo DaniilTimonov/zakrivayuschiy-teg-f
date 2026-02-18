@@ -27,7 +27,6 @@
   }
 }
 
-/* HEADER */
 
 .header {
   display: flex;
@@ -84,7 +83,7 @@
   font-size: 14px;
   text-transform: uppercase;
   background-color: transparent;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
@@ -132,7 +131,6 @@
 }
 
 
-/* MAIN */
 
 
 .main {
@@ -169,7 +167,6 @@
 .label {
   position: absolute;
   top: 25px;
-  /* Тут перепроверил, расстояние верное */
   right: 13px;
   opacity: 0.5;
   font-family: var(--accent-text, 'Press Start 2P'), 'fantasy';
@@ -193,9 +190,8 @@
 @media (width >=768px) {
   .label {
     right: 27px;
-    /* Как я понял ошибка была в адаптиве, кода впервые прожал, то он показал расстояние до бордера, а у нас бордер-бокс, следовательно отступ должен включать бордер, что даёт 27px */
     top: 27px;
-    /* Тут именно 27, так как 25 показыывает до бордера, а отступ должен включать бордер */
+
   }
 }
 

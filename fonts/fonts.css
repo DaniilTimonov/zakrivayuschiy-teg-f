@@ -9,7 +9,8 @@
         url(./Inter-Variable.ttf) format('ttf supports variations'),
         url(./Inter-Variable.ttf) format('ttf-variations');
     font-display: swap;
-    font-weight: 400 800;
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
 }
 
 @font-face {
