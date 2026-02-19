@@ -41,6 +41,7 @@
   font-family: var(--accent-text, 'Press Start 2P'), 'fantasy';
   background-color: var(--background-color, #fff);
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  height: 368px;
 }
 
 .header__logo {
@@ -233,7 +234,7 @@
 .wrapper__text {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 25px;
   padding-inline: 24px;
   padding-block: 23px;
 
@@ -367,7 +368,6 @@
 
 .save__button {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -380,17 +380,24 @@
 .floppy-image {
   z-index: 10;
   flex-shrink: 0;
-  color: var(--button-span, #fff);
+  color: var(--main-color, #000);
   inline-size: 28px;
   block-size: 28px;
-  mix-blend-mode: difference;
+  mix-blend-mode: normal;
+  shape-rendering: crispEdges;
+  image-rendering: pixelated;
+  vector-effect: none;
 }
 
-@media (width >=768px) {
+
+@media (width <=375px) {
   .save__button {
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
     padding: 18.5px 20px;
+    height: 84x;
+
+
   }
 
   .save__button .button__text {
@@ -401,14 +408,30 @@
     inline-size: 21px;
     block-size: 21px;
   }
+
+  .header {
+    height: 327px;
+  }
+
+  .header__decor {
+    bottom: 0px;
+  }
+
+  .header__title {
+    bottom: 0px;
+  }
+
+  .main {
+    gap: 37px;
+  }
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .wrapper__text {
     padding-inline: 25px;
     padding-block: 24px;
   }
-}
+} */
 
 .dialog {
   position: fixed;
