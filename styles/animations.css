@@ -13,17 +13,17 @@
 
 .like-icon.is-liked .core {
     fill: var(--accent-color-heart, #FF0000);
-    animation: colored 0.3s ease-in-out;
+    transition: colored 0.3s ease-in-out;
 }
 
 .like-icon.is-liked .main-body {
     fill: var(--accent-color-heart, #FF0000);
-    animation: colored 0.3s ease-in-out 0.06s;
+    transition: colored 0.3s ease-in-out 0.06s;
 }
 
 .like-icon.is-liked .contour {
     fill: var(--accent-color-heart, #FF0000);
-    animation: colored 0.3s ease-in-out 0.06s;
+    transition: colored 0.3s ease-in-out 0.06s;
 }
 
 .like-icon.is-liked .heart {
@@ -43,6 +43,7 @@
     }
 
     100% {
+        transform: scale(1.25);
         transform-origin: 50% 50%;
     }
 }

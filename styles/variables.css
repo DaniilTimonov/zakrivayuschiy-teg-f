@@ -9,8 +9,8 @@
     --button-span: oklch(100% 0 0);
     --main-text: 'Inter-Variable';
     --accent-text: 'Press Start 2P';
-    --main-weight: 400;
-    --title-weight: 700;
+    --main-weight: 410;
+    --title-weight: 715;
     --gradient-right: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px);
     --gradient-bottom: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px);
     --gradient-color: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
